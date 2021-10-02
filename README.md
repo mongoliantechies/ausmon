@@ -14,7 +14,15 @@ It will create a space for the Mongolian Community to access Australian communit
 
 We intend to strengthen and connect the Mongolian Community with Australian Communities by providing a dual-language website. And primary consumers will be Mongolians living in Australia and planning to come to Australia soon. In addition, Australian organisations and communities can use the website to communicate Mongolian community and distribute information among Mongolians in Australia.
 
-## Contributing
+## Tech Stack
+
+The goal is to use full-stack Javascript that makes it easier for beginners.
+
+- Front-End - [React](https://reactjs.org/) using create-react-app framework
+- Backend (CMS) - [Keystone.js](https://keystonejs.com/) or equivalient - but initially [markdowns to HTML pages](https://github.com/showdownjs/showdown) could work.
+- Hosting - AWS cloud services. e.g. S3, EC2 and RDS etc.
+
+## Contribution
 
 When contributing to this repository, first look at the issues section to see if an issue has been created for the change you wish to make. If not, please create an issue to discuss with the community before you spending your time.
 
