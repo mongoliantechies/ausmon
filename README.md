@@ -22,6 +22,13 @@ The goal is to use full-stack Javascript that makes it easier for beginners.
 - Backend (CMS) - [Keystone.js](https://keystonejs.com/) or equivalient - but initially [markdowns to HTML pages](https://github.com/showdownjs/showdown) could work.
 - Hosting - AWS cloud services. e.g. S3, EC2 and RDS etc.
 
+## Getting Started
+
+- Learn react - https://www.taniarascia.com/getting-started-with-react/
+- Install Node.js - https://nodejs.dev/learn/how-to-install-nodejs
+
+- [Frontend](ausmon-frontend/README.md)
+
 ## Contribution
 
 When contributing to this repository, first look at the issues section to see if an issue has been created for the change you wish to make. If not, please create an issue to discuss with the community before you spending your time.
