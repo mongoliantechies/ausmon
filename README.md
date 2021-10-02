@@ -27,7 +27,23 @@ The goal is to use full-stack Javascript that makes it easier for beginners.
 - Learn react - https://www.taniarascia.com/getting-started-with-react/
 - Install Node.js - https://nodejs.dev/learn/how-to-install-nodejs
 
-- [Frontend](ausmon-frontend/README.md)
+- For [Frontend](ausmon-frontend/README.md) specific instructions please refer ausmon-fronted/README.md
+
+### Initialise
+
+```/bin/sh
+make init
+```
+
+### Start
+
+```/bin/sh
+make start
+```
+
+and you should see running application on http://localhost:3000/
+
+Good luck 😎
 
 ## Contribution
 
