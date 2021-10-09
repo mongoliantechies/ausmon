@@ -5,4 +5,8 @@ init:
 
 .PHONY: start
 start:
-	cd ausmon-frontend && npm start
+	cd frontend && npm start
+
+.PHONY: build
+build:
+	cd frontend && npm run build
