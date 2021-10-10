@@ -2,6 +2,9 @@
 init:
 	./scripts/init.sh
 
+.PHONY: install
+install:
+	cd frontend && npm install
 
 .PHONY: start
 start:
