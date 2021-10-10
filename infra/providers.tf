@@ -8,13 +8,10 @@ terraform {
     }
   }
 
-  backend "remote" {
-    hostname     = "app.terraform.io"
-    organization = "ausmon"
-
-    workspaces {
-      name = "ausmon-website"
-    }
+  backend "s3" {
+    bucket = "ausmon-terraform"
+    key    = "prod/terraform.tfstate"
+    region = "ap-southeast-2"
   }
 }
 
@@ -24,5 +21,5 @@ provider "aws" {
 
 provider "aws" {
   alias  = "acm_provider"
-  region = "ap-southeast-2"
+  region = "us-east-1"
 }
