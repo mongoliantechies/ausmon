@@ -6,6 +6,7 @@ on:
 jobs:
   deployment:
     runs-on: ubuntu-latest
+    environment: "prod"
     steps:
       - run: echo "🚀 Deployment was automatically triggered by a ${{ github.event_name }} event. 🚀"
       - name: checkout repo
