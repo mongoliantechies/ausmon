@@ -11,6 +11,6 @@ if which node > /dev/null
 
 echo "Installing npm dependencies"
 
-cd ausmon-frontend
+cd frontend
 
 npm install
