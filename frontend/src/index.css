@@ -19,11 +19,6 @@ code {
     /* outline: 1px solid black; */
 }
 
-/* html {
-    min-width: 100%;
-    min-height: 100%;
-} */
-
 body {
     background: url("https://imgur.com/mlfI2tR.png");
     background-size: cover;
@@ -40,10 +35,27 @@ body {
     margin: 20px 10px;
 }
 
+header {
+  display: inline-flex;
+  width: 100% !important;
+  margin-bottom: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo {
     width: auto;
     height: auto;
-    margin: 0px 0px 90px;
+}
+
+.language {
+    display: inline-flex;
+    width: 60px;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
 }
 
 h1 {
@@ -51,7 +63,7 @@ h1 {
     color: #FFFFFF;
     font-weight: bold;
     font-size: 48px;
-    margin-bottom: 20px !important;
+    margin-bottom: 50px !important;
     font-weight: bold !important;
     letter-spacing: 1px;
 }
@@ -59,13 +71,13 @@ h1 {
 p {
     color: #FFFFFF;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 25px;
     letter-spacing: 0.02em;
 }
 
 .stay-connected p {
     font-weight: bold;
-    margin: 35px 0px 0px;
+    margin: 35px 0px 10px;
 }
 
 .subscribe {
@@ -119,10 +131,10 @@ p {
     width: 30px; */
 }
 
-#phone-number {
+.email {
     border: 0.5px solid #b2b0b0;
     border-radius: 5px;
-    width: 130px;
+    width: auto;
     height: 27px;
     display: inline-flex;
     align-items: center;
@@ -132,8 +144,14 @@ p {
     font-size: 16px;
 }
 
-#phone-icon {
-    margin-right: 5px;
+.email img {
+    width: 20px;
+    height: 20px;
+    margin: 5px 0px 5px 5px;
+}
+
+#email-contact {
+    color: #FFFFFF;
 }
 
 .copyright {
@@ -153,5 +171,10 @@ p {
 @media screen and (max-width: 576px) {
     body {
         background-image: url("https://imgur.com/IpPP4Uj.png");
+    }
+
+    .logo img{
+        width: 150px;
+        height: 60px;
     }
 }
