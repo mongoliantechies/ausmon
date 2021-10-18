@@ -17,7 +17,7 @@ const App = (props) => {
           </header>
           <h1>Тун Удахгүй...</h1>
           <p>“Австрали дахь Монголчуудын нийгмийн үйлчилгээ, хөгжлийн нийгэмлэг” ашгийн бус байгууллагын албан ёсны вэб сайт тун удахгүй нээгдэнэ.</p>
-          <div className="stay-connected">
+          {/* <div className="stay-connected">
             <p>Та манай вэб сайтаас мэдээлэл авахыг хүсвэл э-мэйл хаягаа энд бичиж үлдээнэ үү.</p>
 
             <form htmlFor="Email Address" action="" method="POST">
@@ -27,7 +27,7 @@ const App = (props) => {
               <button type="submit" id="mon" className="button">ДАГАХ</button>
             </div>
             </form>
-          </div>
+          </div> */}
           <div className="line"></div>
           <div className="row align-items-center">
             <div className="col-md-12 col-sm-12 col-12 col-lg-6 col-xl-6 col-xxl-5 ps-0 pe-0">
