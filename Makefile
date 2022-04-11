@@ -22,3 +22,9 @@ test:
 deploy:
 	make build
 	aws s3 sync frontend/build/ s3://www.ausmon.org.au
+
+
+.PHONY: deploy-testing
+deploy:
+	make build
+	aws s3 sync frontend/build/ s3://testing.ausmon.org.au
