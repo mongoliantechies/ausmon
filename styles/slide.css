@@ -1,0 +1,166 @@
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.slide-container {
+    width: 90%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slide-context {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+    transition: opacity 1s;
+    z-index: 1;
+    margin-top: 15%;
+    color:white;
+    font-weight: 700;
+}
+
+.slide-context h1 {
+    font-size: 3em;
+}
+
+.donate-button input{
+    display: block;
+    width: 10%;
+    background-color: rgba(175, 52, 114, 1);
+    color: white;
+    border-radius: 15px;
+    border: 1px white solid;
+    font-size: 14px;
+    box-shadow: 1px 2px rgb(51, 51, 51);
+    transition: background-color 0.5s, border 0.1s;
+    z-index: 1;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+}
+
+.donate-button input:hover{
+    background-color: rgb(48, 48, 211);
+    border: 2px white solid;
+}
+
+.donate-button-invisible {
+    display: none;
+}
+
+.slide-image img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.active-anim img, .active-anim .slide-context{
+    opacity: 1;
+}
+
+.btn-slide img {
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    filter: invert(1);
+}
+
+.slide-container button {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    z-index: 1;
+    background-color: initial;
+    margin: 0 20px;
+    width: 100%;
+}
+
+.next {
+    align-items: flex-end;
+}
+.prev {
+    align-items: flex-start;
+}
+
+.dots-container {
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    justify-self: center;
+    align-self: end;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-flex;
+    margin: 2px;
+}
+
+.active-dot {
+    background-color: rgb(58, 56, 56);
+    border: 1px white solid;
+}
+
+@media (max-width: 992px) {
+    .slide-container {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .donate-button input {
+        width: 20%
+    }
+}
+
+@media (max-width: 576px) {
+    .slide-container {
+        height: 300px;
+    }
+
+    .slide-context h1 {
+        font-size: 2em;
+    }
+
+    .slide-context {
+        margin: 0;
+    }
+
+    .donate-button input {
+        width: 30%;
+    }
+}
+
+@media ((max-width: 1900px) and (min-width: 576px)) {
+    .slide-context {
+        margin-top: 8%;
+    }
+
+    .slide-context h1 {
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 490px) {
+    .slide-context h1 {
+        font-size: 1.9em;
+    }
+}
