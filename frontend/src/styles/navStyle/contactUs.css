@@ -1,0 +1,87 @@
+.contactUs h1{
+    text-align: center;
+}
+
+/* .contactUs {
+    display: gr;
+} */
+
+.contactUs-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 35%;
+    margin: 40px auto;
+    text-align: start;
+    font-size: 1.5em;
+    border: 2px gray solid;
+    padding: 15px;
+    text-decoration: underline;
+}
+
+.contactUs-content img {
+    width: 25px;
+    margin-right: 10px;
+    align-self: center;
+}
+
+.contactUs form {
+    width: 35%;
+    margin: 20px auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.contactUs form p {
+    font-size: 1.2em;
+}
+
+.contactUs form button {
+    background-color: rgba(175, 52, 114, 0.8);
+    width: 95%;
+    font-size: 1em;
+    box-shadow: none;
+    justify-content: center;
+    transition: border 0.5s ease-in-out, width 0.5s ease-in-out, font-weight 0.5s ease-in-out;
+}
+
+.contactUs form button:hover {
+    box-shadow: 3px gray solid;
+    font-weight: 700; 
+    width: 100%;
+    /* border: 1px black solid; */
+}
+
+@media (max-width: 1200px) {
+    .contactUs-content {
+        font-size: 1.1em;
+        width: 45%;
+        height: 200px;
+    }
+
+    .contactUs form {
+        width: 45%;
+    }
+}
+
+@media (max-width: 991px) {
+    .contactUs form {
+        width: 60%;
+        margin-top: 30px;
+    }
+
+    .contactUs-content {
+        width: 60%;
+    }
+}
+
+@media (max-width: 576px) {
+    .contactUs-content {
+        width: 80%;
+        height: 180px;
+    }
+
+    .contactUs form {
+        width: 80%;
+    }
+}

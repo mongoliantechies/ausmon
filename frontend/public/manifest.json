@@ -1,6 +1,6 @@
 {
-  "short_name": "Aus-Mon",
-  "name": "Aus-Mon Community Services & Development Inc",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",

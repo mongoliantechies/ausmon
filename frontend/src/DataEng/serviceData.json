@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Health",
+        "id": 23488,
+        "image": "health.png"
+    },
+    {   
+        "name": "Education",
+        "id": 94589,
+        "image": "education.png"
+    },
+    {   
+        "name": "Family & Children",
+        "id": 89569,
+        "image": "family.png"
+    },
+    {   
+        "name": "Social well-being",
+        "id": 74657,
+        "image": "social-well-being.png"
+    },
+    {   
+        "name": "Law & Police",
+        "id": 49556,
+        "image": "law&police.png"
+    },
+    {   
+        "name": "Mongolian Communities & Business",
+        "id": 95096,
+        "image": "mongolian-community&business.png"
+    }
+]

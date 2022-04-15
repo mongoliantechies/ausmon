@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1523675,
+        "name": "Event1",
+        "date": {
+            "day": 14,
+            "month": "March",
+            "year": 2019
+        },
+        "content": "Context",
+        "time": "12pm - 2pm",
+        "location": "Online",
+        "image": "flower.jpg"
+    },
+    {
+        "id": 1478594,
+        "name": "Event2",
+        "date": {
+            "day": 14,
+            "month": "March",
+            "year": 2019
+        },
+        "content": "Context",
+        "time": "12pm - 2pm",
+        "location": "Online",
+        "image": "flower.jpg"
+    },
+    {
+        "id": 184783,
+        "name": "Event3",
+        "date": {
+            "day": 14,
+            "month": "March",
+            "year": 2019
+        },
+        "content": "Context",
+        "time": "12pm - 2pm",
+        "location": "Online",
+        "image": "flower.jpg"
+    },
+    {
+        "id": 487959,
+        "name": "Event4",
+        "date": {
+            "day": 14,
+            "month": "March",
+            "year": 2019
+        },
+        "content": "Context",
+        "time": "12pm - 2pm",
+        "location": "Online",
+        "image": "flower.jpg"
+    },
+    {
+        "id": 734587,
+        "name": "Event5",
+        "date": {
+            "day": 14,
+            "month": "March",
+            "year": 2019
+        },
+        "content": "Context",
+        "time": "12pm - 2pm",
+        "location": "Online",
+        "image": "flower.jpg"
+    },
+    {
+        "id": 423904,
+        "name": "Event6",
+        "date": {
+            "day": 14,
+            "month": "March",
+            "year": 2019
+        },
+        "content": "Context",
+        "time": "12pm - 2pm",
+        "location": "Online",
+        "image": "flower.jpg"
+    }
+]
