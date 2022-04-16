@@ -6,7 +6,7 @@ export const serviceData = createAsyncThunk(
   "services/serviceData",
   async (data) => {
     const fetchServiceData =
-      (await data) == "mon" ? serviceDataMon : serviceDataEng;
+      (await data) === "mon" ? serviceDataMon : serviceDataEng;
     // console.log(fetchServiceData);
     return fetchServiceData;
   }

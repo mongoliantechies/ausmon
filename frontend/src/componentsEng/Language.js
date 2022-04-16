@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Redirect } from "react-router-dom";
 import { newsLang } from "../features/news/newsSlice";
-import { newsByIdLang } from "../features/news/newsByIdSlice";
+// import { newsByIdLang } from "../features/news/newsByIdSlice";
 import { serviceData } from "../features/services/servicesSlice";
 import { footerLang } from "../features/footer/footerSlice";
 
@@ -15,7 +15,7 @@ export const Language = ({ language, setLanguage }) => {
     dispatch(footerLang(language));
     // dispatch(newsByIdLang(language));
     // console.log(dispatch(newsLang(language)));
-  }, [language]);
+  }, [language, dispatch]);
 
   return (
     <div

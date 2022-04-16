@@ -5,7 +5,7 @@ import { selectEvents } from "./eventsSlice";
 import "../../styles/events.css";
 import { loadEventById } from "./eventByIdSlice";
 import { Link } from "react-router-dom";
-import { Language } from "../../componentsEng/Language";
+// import { Language } from "../../componentsEng/Language";
 
 export const Events = ({ language }) => {
   const events = useSelector(selectEvents);
@@ -14,7 +14,7 @@ export const Events = ({ language }) => {
   return (
     <div className="row" style={{ backgroundColor: "white" }}>
       <div className="events-title">
-        <h1>{language == "mon" ? "Үйл ажиллагаа" : "Events"}</h1>
+        <h1>{language === "mon" ? "Үйл ажиллагаа" : "Events"}</h1>
         <hr></hr>
       </div>
       <div className="events-container">
@@ -22,7 +22,7 @@ export const Events = ({ language }) => {
           return (
             <Link
               to={
-                language == "mon"
+                language === "mon"
                   ? `/үйлажиллагаа/${event.id}`
                   : `/events/${event.id}`
               }

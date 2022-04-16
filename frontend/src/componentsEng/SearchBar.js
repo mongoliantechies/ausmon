@@ -1,9 +1,10 @@
-import React, { useState, createContext, useContext } from "react";
+import React, { useState } from "react";
 
 export const SearchBar = () => {
   const [search, setSearch] = useState("");
   // const [language, setLanguage] = useState(true);
   // const mongolianLang = createContext();
+  console.log(search);
 
   const handleInputChange = ({ target }) => {
     const { value } = target;

@@ -5,7 +5,7 @@ const footerLinksEng = require("../../DataEng/footerData.json");
 export const footerLang = createAsyncThunk(
   "footer/footerLang",
   async (lang) => {
-    const data = await (lang == "mon" ? footerLinksMon : footerLinksEng);
+    const data = await (lang === "mon" ? footerLinksMon : footerLinksEng);
     return data;
   }
 );

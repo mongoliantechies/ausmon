@@ -1,9 +1,9 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../../styles/navStyle/Nav.css";
 import { NavLink } from "react-router-dom";
 import { navEng } from "../../DataEng/navEng";
 import { navMon } from "../../DataMon/navMon";
-import { SearchBar } from "../SearchBar";
+// import { SearchBar } from "../SearchBar";
 import { Language } from "../Language";
 
 export const Nav = ({ language, setLanguage }) => {

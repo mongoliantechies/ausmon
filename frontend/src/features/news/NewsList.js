@@ -1,8 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { selectArticles, isLoadingArticle, loadNews } from "./newsSlice.js";
+import {
+  selectArticles,
+  //  isLoadingArticle, loadNews
+} from "./newsSlice.js";
 import { loadNewsById } from "./newsByIdSlice.js";
-import { FullNews } from "./FullNews.js";
+// import { FullNews } from "./FullNews.js";
 import "../../styles/news.css";
 import { Link } from "react-router-dom";
 
@@ -34,7 +37,7 @@ export const NewsList = ({ language }) => {
               </div>
               <Link
                 to={
-                  language == "mon"
+                  language === "mon"
                     ? `/мэдээ/${article.id}`
                     : `/news/${article.id}`
                 }

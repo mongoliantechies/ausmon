@@ -4,9 +4,9 @@ const loadEventsEnd = require("../../DataEng/eventsResource.json");
 
 export const loadEventById = createAsyncThunk(
   "eventById/loadEventById",
-  async (data, thunkAPI) => {
+  async (data) => {
     const response =
-      (await data.language) == "mon" ? loadEventsMon : loadEventsEnd;
+      (await data.language) === "mon" ? loadEventsMon : loadEventsEnd;
     const events = await response.filter((event) => event.id === data.id);
     return events[0];
   }

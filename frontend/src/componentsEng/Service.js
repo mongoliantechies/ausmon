@@ -6,9 +6,9 @@ const serviceDataEng = require("../DataEng/serviceData.json");
 export const Service = ({ language }) => {
   const params = useParams();
   // console.log("hekdfj", params);
-  const fetchService = language == "mon" ? serviceDataMon : serviceDataEng;
+  const fetchService = language === "mon" ? serviceDataMon : serviceDataEng;
   const service = fetchService.filter((service) => {
-    return service.name.replace(/ /g, "").toLowerCase() == params.name;
+    return service.name.replace(/ /g, "").toLowerCase() === params.name;
   });
   console.log(service[0]);
 
