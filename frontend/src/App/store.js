@@ -18,7 +18,6 @@ const rootReducer = combineReducers({
   events: eventsReducer,
   services: serviceReducer,
   footer: footerReducer,
-  events: eventsReducer,
   subscribe: subscribeReducer,
   eventById: eventByIdRecucer,
 });

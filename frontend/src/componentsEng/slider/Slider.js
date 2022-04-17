@@ -2,12 +2,12 @@ import React, { useEffect, useRef, useState } from "react";
 import { BtnSlider } from "./BtnSlider";
 import "../../styles/slide.css";
 import { IndexDots } from "./IndexDots";
-import { hover } from "@testing-library/user-event/dist/hover";
+// import { hover } from "@testing-library/user-event/dist/hover";
 const sliderData = require("../../DataMon/sliderData.json");
 
 export const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(1);
-  const slideRef = useRef();
+  // const slideRef = useRef();
 
   const nextSlide = () => {
     if (slideIndex !== sliderData.length) {

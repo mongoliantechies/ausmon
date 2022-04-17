@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export const SendEmail = ({ language, emailTo }) => {
   const [name, setName] = useState("");
@@ -19,7 +19,7 @@ export const SendEmail = ({ language, emailTo }) => {
   return (
     <form className="col-lg-12 col-md-8 mx-auto">
       <p>
-        {language == "mon"
+        {language === "mon"
           ? "Та манайх руу мэссэж илгээхийг хүсвэл доорх формыг бөглөнө үү."
           : ""}
       </p>
@@ -27,21 +27,21 @@ export const SendEmail = ({ language, emailTo }) => {
         onChange={(e) => setName(e.target.value)}
         value={name}
         type="text"
-        placeholder={language == "mon" ? "таны нэр" : "name"}
+        placeholder={language === "mon" ? "таны нэр" : "name"}
         required
       />
       <input
         onChange={(e) => setPhone(e.target.value)}
         value={phone}
         type="tel"
-        placeholder={language == "mon" ? "утасны дугаар" : "phone number"}
+        placeholder={language === "mon" ? "утасны дугаар" : "phone number"}
         required
       />
       <input
         onChange={(e) => setEmail(e.target.value)}
         value={email}
         type="email"
-        placeholder={language == "mon" ? "имайл хаяг" : "email address"}
+        placeholder={language === "mon" ? "имайл хаяг" : "email address"}
         required
       />
       <input
@@ -49,11 +49,11 @@ export const SendEmail = ({ language, emailTo }) => {
         value={message}
         id="message"
         type="text"
-        placeholder={language == "mon" ? "захиа" : "message"}
+        placeholder={language === "mon" ? "захиа" : "message"}
         required
       />
       <button type="submit" onSubmit={(e) => handleSendEmail(e.target)}>
-        {language == "mon" ? "Илгээх" : "Submit"}
+        {language === "mon" ? "Илгээх" : "Submit"}
       </button>
     </form>
   );

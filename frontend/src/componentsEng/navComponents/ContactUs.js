@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { SendEmail } from "./SendEmail";
 
 export const ContactUs = ({ language }) => {
-  const dataSource = language == "mon" ? navMon : navEng;
+  const dataSource = language === "mon" ? navMon : navEng;
   const contactData = Object.values(dataSource).filter((element) => {
     return element.name === "Холбоо Барих"
       ? element.name === "Холбоо Барих"

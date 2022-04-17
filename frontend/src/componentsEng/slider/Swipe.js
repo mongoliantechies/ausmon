@@ -1,12 +1,6 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import "../../styles/swipe.css";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -40,7 +34,7 @@ export const Swipe = ({ language }) => {
         // onSwiper={(swiper) => console.log("onSwiper", swiper)}
         // onSlideChange={() => console.log("slide change")}
       >
-        {(language == "mon" ? slideDataMon : slideDataEng || []).map(
+        {(language === "mon" ? slideDataMon : slideDataEng || []).map(
           (slide) => {
             return (
               <SwiperSlide key={slide.id}>
@@ -59,6 +53,7 @@ export const Swipe = ({ language }) => {
                 </div>
                 <img
                   src={process.env.PUBLIC_URL + `/slider-images/${slide.image}`}
+                  alt=""
                 />
               </SwiperSlide>
             );

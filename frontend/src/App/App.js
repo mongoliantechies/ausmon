@@ -1,7 +1,7 @@
 import "../styles/App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Nav } from "../componentsEng/navComponents/Nav.js";
-import { Header } from "../componentsEng/Header.js";
+// import { Header } from "../componentsEng/Header.js";
 import { ServiceList } from "../componentsEng/ServiceList.js";
 import { Footer } from "../componentsEng/Footer.js";
 import { Events } from "../features/events/Events";
@@ -13,9 +13,9 @@ import { Event } from "../features/events/Event";
 import { ContactUs } from "../componentsEng/navComponents/ContactUs";
 import { Swipe } from "../componentsEng/slider/Swipe";
 import { createContext, useState } from "react";
-import { Language } from "../componentsEng/Language";
+// import { Language } from "../componentsEng/Language";
 import { Service } from "../componentsEng/Service";
-import { Fetch } from "../componentsEng/Fetch";
+// import { Fetch } from "../componentsEng/Fetch";
 
 function App() {
   const [language, setLanguage] = useState("mon");
@@ -42,25 +42,25 @@ function App() {
               </Route>
 
               <Route
-                path={language == "mon" ? "/биднийтухай" : "/aboutus"}
+                path={language === "mon" ? "/биднийтухай" : "/aboutus"}
                 render={(prop) => <AboutUs language={language} />}
               ></Route>
               <Route
-                path={language == "mon" ? "/мэдээ" : "/news"}
+                path={language === "mon" ? "/мэдээ" : "/news"}
                 exact
                 render={(prop) => <NewsList language={language} />}
               ></Route>
               <Route
-                path={language == "mon" ? "/мэдээ/:id" : "/news/:id"}
+                path={language === "mon" ? "/мэдээ/:id" : "/news/:id"}
                 render={(prop) => <FullNews language={language} />}
               ></Route>
               <Route
-                path={language == "mon" ? "/үйлажиллагаа" : "/events"}
+                path={language === "mon" ? "/үйлажиллагаа" : "/events"}
                 exact
                 render={(prop) => <Events language={language} />}
               ></Route>
               <Route
-                path={language == "mon" ? "/үйлажиллагаа/:id" : "/events/:id"}
+                path={language === "mon" ? "/үйлажиллагаа/:id" : "/events/:id"}
                 render={(prop) => <Event language={language} />}
               ></Route>
               {/* <Route path="/resources" component={Resources}>
@@ -73,11 +73,11 @@ function App() {
               
             </Route> */}
               <Route
-                path={language == "mon" ? "/холбообарих" : "/contactus"}
+                path={language === "mon" ? "/холбообарих" : "/contactus"}
                 render={(prop) => <ContactUs language={language} />}
               ></Route>
               <Route
-                path={language == "mon" ? "/сервис/:name" : "/service/:name"}
+                path={language === "mon" ? "/сервис/:name" : "/service/:name"}
                 render={(prop) => <Service language={language} />}
               ></Route>
             </div>

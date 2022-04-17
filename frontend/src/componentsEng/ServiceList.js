@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/services.css";
 import { useSelector } from "react-redux";
 import { selectServices } from "../features/services/servicesSlice";
-import { Service } from "./Service.js";
+// import { Service } from "./Service.js";
 import { Link } from "react-router-dom";
 
 export const ServiceList = ({ language, match }) => {
@@ -12,7 +12,7 @@ export const ServiceList = ({ language, match }) => {
     <div className="row" style={{ backgroundColor: "white" }}>
       <div className="service-title">
         <h1>
-          {language == "mon" ? "Бид таньд яаж туслах вэ?" : "How can we help?"}
+          {language === "mon" ? "Бид таньд яаж туслах вэ?" : "How can we help?"}
         </h1>
         <hr></hr>
       </div>
@@ -21,7 +21,7 @@ export const ServiceList = ({ language, match }) => {
           return (
             <Link
               to={
-                language == "mon"
+                language === "mon"
                   ? `/сервис/${service.name.replace(/ /g, "").toLowerCase()}`
                   : `/service/${service.name.replace(/ /g, "").toLowerCase()}`
               }

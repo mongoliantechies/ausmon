@@ -4,7 +4,7 @@ import { navMon } from "../../DataMon/navMon";
 import "../../styles/navStyle/aboutUs.css";
 
 export const AboutUs = ({ language }) => {
-  const aboutUs = language == "mon" ? navMon[0] : navEng[0];
+  const aboutUs = language === "mon" ? navMon[0] : navEng[0];
   return (
     <div className="aboutUs container mx-5">
       <img

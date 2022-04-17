@@ -1,6 +1,6 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { useContext } from "react";
-import { MonLang } from "../../App/App";
+import { createSlice } from "@reduxjs/toolkit";
+// import { useContext } from "react";
+// import { MonLang } from "../../App/App";
 import dataEng from "../../DataEng/newsResource.json";
 import dataMon from "../../DataMon/newsResource.json";
 // const allNews = require("../../Data/newsResource");
