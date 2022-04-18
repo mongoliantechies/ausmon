@@ -28,7 +28,7 @@ export const Swipe = ({ language }) => {
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 3500 }}
 
         // scrollbar={{ draggable: true }}
         // onSwiper={(swiper) => console.log("onSwiper", swiper)}
