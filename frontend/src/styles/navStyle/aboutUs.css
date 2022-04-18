@@ -1,0 +1,34 @@
+.aboutUs img {
+    width: 25%;
+    height: auto;
+    margin: 0px auto;
+}
+
+.aboutUs-title h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #007aff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.aboutUs-title h2 {
+    font-weight: 700;
+    color: #007aff;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.aboutUs-title {
+    text-align: justify;
+}
+
+.aboutUs-context h2 {
+    text-align: start;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+.aboutUs-context p {
+    text-indent: 30px;
+}

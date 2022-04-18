@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Мэдээ1",
+    "image":
+      "/news-img.png",
+    "preview": "This is first news preview!",
+    "fullNews": "This is first full news!",
+    "id": 1,
+    "date": "Tue Mar 29 2022 14:50:00"
+  },
+  {
+    "title": "Мэдээ2",
+    "image":
+      "/news-img.png",
+    "preview": "This is first news preview!",
+    "fullNews": "This is first full news!",
+    "id": 2,
+    "date": "Tue Mar 29 2022 14:50:00"
+  },
+  {
+    "title": "Мэдээ3",
+    "image":
+      "/news-img.png",
+    "preview": "This is first news preview!",
+    "fullNews": "This is first full news!",
+    "id": 3,
+    "date": "Tue Mar 29 2022 14:50:00"
+  },
+  {
+    "title": "Мэдээ4",
+    "image":
+      "/news-img.png",
+    "preview": "This is first news preview!",
+    "fullNews": "This is first full news!",
+    "id": 4,
+    "date": "Tue Mar 29 2022 14:50:00"
+  },
+  {
+    "title": "Мэдээ5",
+    "image":
+      "/news-img.png",
+    "preview": "This is first news preview!",
+    "fullNews": "This is first full news!",
+    "id": 5,
+    "date": "Tue Mar 29 2022 14:50:00"
+  },
+  {
+    "title": "Мэдээ6",
+    "image":
+      "/news-img.png",
+    "preview": "This is first news preview!",
+    "fullNews": "This is first full news!",
+    "id": 6,
+    "date": "Tue Mar 29 2022 14:50:00"
+  }
+]
