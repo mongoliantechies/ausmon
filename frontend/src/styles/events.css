@@ -38,13 +38,13 @@ h4, h3{
     height: 15px;
     object-fit: contain;
     margin-right: 10px;
-    filter: invert(70%);
+    /* filter: invert(70%); */
     transition: filter 0.2s;
     align-self: center;
 }
 
 .events:hover img{
-    filter: invert(0%)
+    filter: invert()
 }
 
 .event-time, .event-location {

@@ -1,6 +1,7 @@
 export const navMon = [
   {
     name: "Бидний тухай",
+    engName: "About Us",
     id: 2,
     content: [
       {
@@ -52,13 +53,14 @@ export const navMon = [
       },
     ],
   },
-  { name: "Мэдээ", id: 3 },
-  { name: "Үйл ажиллагаа", id: 4 },
-  { name: "Resources", id: 5 },
-  { name: "Хандив", id: 6 },
-  { name: "Volunteer", id: 7 },
+  { name: "Мэдээ", engName: "News", id: 3 },
+  { name: "Үйл ажиллагаа", engName: "Events", id: 4 },
+  { name: "Resources", engName: "Resources", id: 5 },
+  { name: "Хандив", engName: "Donate", id: 6 },
+  { name: "Volunteer", engName: "Volunteer", id: 7 },
   {
     name: "Холбоо Барих",
+    engName: "Contact Us",
     id: 8,
     content: {
       phone: "0415 674 556,  0451 441 085",

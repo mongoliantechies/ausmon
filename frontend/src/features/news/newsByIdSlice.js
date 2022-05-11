@@ -6,7 +6,7 @@ export const loadNewsById = createAsyncThunk(
   "newsById/loadNewsById",
   async (data, thunkAPI) => {
     const response =
-      (await data.language) == "mon" ? loadFullNewsMon : loadFullNewsEng;
+      (await data.language) === "mon" ? loadFullNewsMon : loadFullNewsEng;
     const news = await response.filter((news) => news.id === data.id);
     return news[0];
     // const res = response.json();

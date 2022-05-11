@@ -22,6 +22,7 @@
     background-color: rgba(175, 52, 114, 0.8);
     border-radius: 5px;
     margin: 0 0 10px 10px;
+    color: #000
 }
 
 .articles button:hover {
@@ -41,7 +42,7 @@
 }
 
 .news-date img {
-    filter: invert();
+    /* filter: invert(); */
     object-fit: contain;
     margin-right: 2px;
 }

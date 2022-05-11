@@ -1,50 +1,62 @@
 [
     {
         "name": "Холбоо Барих",
+        "engName": "Contact Us",
         "id": 87234892
     },
     {
         "name": "Бидний тухай",
+        "engName": "About Us",
         "id": 93840938
     },
     {
         "name": "Мэдээ",
+        "engName": "News",
         "id": 69850968
     },
     {
         "name": "Resources",
+        "engName": "Resources",
         "id": 49859090
     },
     {
         "name": "Newsletters",
+        "engName": "Newsletters",
         "id": 267153268
     },
     {
         "name": "Events",
+        "engName": "Events",
         "id": 94859045
     },
     {
         "name": "Хамтрагч",
+        "engName": "Partners",
         "id": 90458003
     },
     {
         "name": "Санал хүсэлт",
+        "engName": "Feedback",
         "id": 20398895
     },
     {
         "name": "Privacy",
+        "engName": "Privacy",
         "id": 837459950
     },
     {
         "name": "Terms & Conditions",
+        "engName": "Terms & Conditions",
         "id": 1111111
     },
     {
         "name": "Subscribe",
+        "engName": "",
         "id": 39834943
     },
     {
         "name": "Project Developers",
+        "engName": "",
         "id": 38405987
     }
 ]

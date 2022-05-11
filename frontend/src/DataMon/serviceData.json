@@ -16,31 +16,31 @@
                 "context": "Сэтгэл түгшилт бол хүн бүрт үе үе тохиолддог байгалийн бөгөөд хэвийн хариу үйлдэл юм. Хүмүүс өөрсдийгөө аюул заналхийлэл, аюултай нөхцөлд байна гэж бодох үедээ сэтгэл түгших мэдрэмжийг авч байдаг. Хэт их хүчтэй биш бол, зарим тохиолдолд сэтгэл түгших нь хөдөлгөөн ихтэй замаар гарах эсвэл эрсдэлтэй үйлдэл хийх гэх мэт үед бидний сэрэмжтэй байдлыг нэмэгдүүлж байдаг ач тустай юм..."
             }
         ],
-        "image": "health.png"
+        "image": "health.webp"
     },
     {   
         "name": "Боловсрол",
         "id": 94589,
-        "image": "education.png"
+        "image": "education.webp"
     },
     {   
         "name": "Гэр бүл & Хүүхэд",
         "id": 89569,
-        "image": "family.png"
+        "image": "family.webp"
     },
     {   
         "name": "Social well-being",
         "id": 74657,
-        "image": "social-well-being.png"
+        "image": "social-well-being.webp"
     },
     {   
         "name": "Хууль & Цагдаа",
         "id": 49556,
-        "image": "law&police.png"
+        "image": "law&police.webp"
     },
     {   
         "name": "Mongolian Communities & Business",
         "id": 95096,
-        "image": "mongolian-community&business.png"
+        "image": "mongolian-community&business.webp"
     }
 ]

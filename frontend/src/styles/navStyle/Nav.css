@@ -18,11 +18,8 @@
     grid-template-columns: 3fr 9fr; */
     justify-items: center;
     align-items: center;
-    /* text-decoration: none; */
     border: none;
     border-radius: 70%;
-    
-    /* left: 0; */
 }
 
 .nav-hidden-links {
@@ -66,7 +63,7 @@
 }
 
 .search-container input {
-    background-image: url("../../../public/event-icons/search-icon.png");
+    background-image: url("../../../public/event-icons/search-icon.webp");
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;

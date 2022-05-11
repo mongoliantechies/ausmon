@@ -1,8 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { selectArticles, isLoadingArticle, loadNews } from "./newsSlice.js";
+import {
+  selectArticles,
+  // isLoadingArticle, loadNews
+} from "./newsSlice.js";
 import { loadNewsById } from "./newsByIdSlice.js";
-import { FullNews } from "./FullNews.js";
+// import { FullNews } from "./FullNews.js";
 import "../../styles/news.css";
 import { Link } from "react-router-dom";
 
@@ -20,10 +23,10 @@ export const NewsList = ({ language }) => {
         {(articles || []).map((article) => {
           return (
             <div className="articles col" key={article.id}>
-              <img src={article.image} alt={article.title} />
+              <img src={article.image} alt={article.title} loading="lazy" />
               <div className="news-date">
                 <img
-                  src={process.env.PUBLIC_URL + "/event-icons/clock-icon.png"}
+                  src={process.env.PUBLIC_URL + "/event-icons/clock-icon.webp"}
                   alt="clock-icon"
                 />
                 {article.date}
@@ -32,13 +35,7 @@ export const NewsList = ({ language }) => {
                 <h3>{article.title}</h3>
                 <p>{article.preview}</p>
               </div>
-              <Link
-                to={
-                  language == "mon"
-                    ? `/мэдээ/${article.id}`
-                    : `/news/${article.id}`
-                }
-              >
+              <Link to={`/news/${article.id}`}>
                 <button
                   onClick={(e) => {
                     dispatch(
