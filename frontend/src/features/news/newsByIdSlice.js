@@ -1,10 +1,10 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 const loadFullNewsMon = require("../../DataMon/newsResource");
 const loadFullNewsEng = require("../../DataEng/newsResource");
 
 export const loadNewsById = createAsyncThunk(
   "newsById/loadNewsById",
-  async (data, thunkAPI) => {
+  async (data) => {
     const response =
       (await data.language) === "mon" ? loadFullNewsMon : loadFullNewsEng;
     const news = await response.filter((news) => news.id === data.id);
