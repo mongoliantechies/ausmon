@@ -23,7 +23,11 @@ export const FullNews = () => {
 
   return (
     <section className="fullNews">
-      <img src={process.env.PUBLIC_URL + article.image} alt={article.title} />
+      <img
+        src={process.env.PUBLIC_URL + article.image}
+        alt={article.title}
+        loading="lazy"
+      />
       <span>{article.date}</span>
       <h2>{article.title}</h2>
       <p>{article.fullNews}</p>

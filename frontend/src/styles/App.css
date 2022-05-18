@@ -1,66 +1,8 @@
-/* .App {
-  text-align: center;
+@font-face { 
+  font-family: 'Open Sans', sans-serif; 
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+  font-display: swap; 
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-/* .nav-section{
-  grid-area: nav;
-  margin: 0px 30px 0px 10px
-}
-.header-section {
-  grid-area: header;
-  margin: 0px 30px 20px 40px
-}
-.service-section {
-  grid-area: category;
-  margin: 20px 30px 20px 40px
-}
-.footer-section {
-  grid-area: footer;
-  margin: 20px 30px 0px 40px;
-  
-}
-
-.sideBar {
-  grid-area: sidebar;
-  margin: 0px 30px 0 0;
-  display: grid;
-  grid-template-rows: 4fr 4fr 3fr;
-} */
-
-/* .searchBar {
-  grid-area: searchBar;
-  margin: 0px 30px 0 0;
-} */
 
 .App {
   height: 100%;
@@ -71,7 +13,3 @@
 h1 {
   margin-top: 20px;
 }
-
-/* * {
-  border: 1px black solid;
-} */

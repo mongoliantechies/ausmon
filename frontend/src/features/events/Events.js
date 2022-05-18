@@ -5,7 +5,7 @@ import { selectEvents } from "./eventsSlice";
 import "../../styles/events.css";
 import { loadEventById } from "./eventByIdSlice";
 import { Link } from "react-router-dom";
-// import { Language } from "../../componentsEng/Language";
+// import { Language } from "../../components/Language";
 
 export const Events = ({ language }) => {
   const events = useSelector(selectEvents);
@@ -20,17 +20,12 @@ export const Events = ({ language }) => {
       <div className="events-container">
         {(events || []).map((event) => {
           return (
-            <Link
-              to={
-                language === "mon"
-                  ? `/үйлажиллагаа/${event.id}`
-                  : `/events/${event.id}`
-              }
-              style={{ textDecoration: "none" }}
-            >
+            <Link to={`/events/${event.id}`} style={{ textDecoration: "none" }}>
               <div
                 onClick={(e) => {
-                  return dispatch(loadEventById({id: event.id, language: language}));
+                  return dispatch(
+                    loadEventById({ id: event.id, language: language })
+                  );
                 }}
                 className="events col"
                 key={event.id}
@@ -44,7 +39,9 @@ export const Events = ({ language }) => {
                 <h4>{event.name}</h4>
                 <div className="event-time">
                   <img
-                    src={process.env.PUBLIC_URL + `/event-icons/clock-icon.png`}
+                    src={
+                      process.env.PUBLIC_URL + `/event-icons/clock-icon.webp`
+                    }
                     alt="clock-icon"
                   />
                   <p>{event.time}</p>
@@ -52,7 +49,7 @@ export const Events = ({ language }) => {
                 <div className="event-location">
                   <img
                     src={
-                      process.env.PUBLIC_URL + `/event-icons/location-icon.png`
+                      process.env.PUBLIC_URL + `/event-icons/location-icon.webp`
                     }
                     alt="location-icon"
                   />

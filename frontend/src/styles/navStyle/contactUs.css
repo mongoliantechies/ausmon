@@ -20,7 +20,7 @@
 }
 
 .contactUs-content img {
-    width: 25px;
+    width: 30px;
     margin-right: 10px;
     align-self: center;
 }
@@ -83,5 +83,12 @@
 
     .contactUs form {
         width: 80%;
+    }
+}
+
+@media (max-width: 880px) {
+    .articles img {
+        border-top-left-radius: 21px;
+        border-top-right-radius: 21px;
     }
 }

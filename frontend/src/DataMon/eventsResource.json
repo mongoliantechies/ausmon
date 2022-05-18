@@ -10,7 +10,7 @@
         "content": "Context",
         "time": "12pm - 2pm",
         "location": "Online",
-        "image": "flower.jpg"
+        "image": "flower.jpeg"
     },
     {
         "id": 1478594,
@@ -23,7 +23,7 @@
         "content": "Context",
         "time": "12pm - 2pm",
         "location": "Online",
-        "image": "flower.jpg"
+        "image": "flower.jpeg"
     },
     {
         "id": 184783,
@@ -36,7 +36,7 @@
         "content": "Context",
         "time": "12pm - 2pm",
         "location": "Online",
-        "image": "flower.jpg"
+        "image": "flower.jpeg"
     },
     {
         "id": 487959,
@@ -49,7 +49,7 @@
         "content": "Context",
         "time": "12pm - 2pm",
         "location": "Online",
-        "image": "flower.jpg"
+        "image": "flower.jpeg"
     },
     {
         "id": 734587,
@@ -62,7 +62,7 @@
         "content": "Context",
         "time": "12pm - 2pm",
         "location": "Online",
-        "image": "flower.jpg"
+        "image": "flower.jpeg"
     },
     {
         "id": 423904,
@@ -75,6 +75,6 @@
         "content": "Context",
         "time": "12pm - 2pm",
         "location": "Online",
-        "image": "flower.jpg"
+        "image": "flower.jpeg"
     }
 ]
