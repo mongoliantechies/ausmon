@@ -1,10 +1,16 @@
-.contactUs h1{
-    text-align: center;
+.contactUs {
+    background-image: url('../../../public/contact-icons/hand_phone.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    row-gap: 0;
 }
 
-/* .contactUs {
-    display: gr;
-} */
+.contactUs h1{
+    text-align: center;
+    height: fit-content;
+}
 
 .contactUs-content {
     display: flex;

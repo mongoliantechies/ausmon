@@ -5,8 +5,8 @@ import "../../styles/swipe.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/bundle";
-import "swiper/css/autoplay";
+// import "swiper/css/bundle";
+// import "swiper/css/autoplay";
 
 const slideDataMon = require("../../DataMon/sliderData.json");
 const slideDataEng = require("../../DataEng/sliderData.json");

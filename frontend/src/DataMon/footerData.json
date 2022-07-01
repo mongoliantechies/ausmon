@@ -15,23 +15,24 @@
         "id": 69850968
     },
     {
-        "name": "Resources",
-        "engName": "Resources",
+        "name": "Зургын цомог",
+        "engName": "Album",
         "id": 49859090
     },
     {
         "name": "Newsletters",
+        "list": ["August-issue-Mongolian.pdf", "May-issue-Mongolian.pdf"],
         "engName": "Newsletters",
         "id": 267153268
     },
     {
-        "name": "Events",
+        "name": "Өдөрлөгүүд",
         "engName": "Events",
         "id": 94859045
     },
     {
-        "name": "Хамтрагч",
-        "engName": "Partners",
+        "name": "Сайн дурын ажиллагаа",
+        "engName": "Volunteer",
         "id": 90458003
     },
     {

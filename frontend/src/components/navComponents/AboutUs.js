@@ -18,10 +18,29 @@ export const AboutUs = ({ language }) => {
             <div className="aboutUs-title col-lg-8 px-4 mx-auto">
               <h1>{section.title.toUpperCase()}</h1>
               {section.context.map((el) => {
+                console.log("", el.image);
                 return (
                   <div className="aboutUs-context" key={el.subName}>
                     <h2>{el.subName}</h2>
                     <p>{el.text}</p>
+                    {(el.image || []).map((img) => {
+                      return (
+                        <img
+                          style={{ width: "100%" }}
+                          src={
+                            process.env.PUBLIC_URL + `/aboutUs-images/${img}`
+                          }
+                          alt=""
+                        />
+                      );
+                    })}
+                    {(el.list || []).map((list) => {
+                      return (
+                        <ul>
+                          <li>{list}</li>
+                        </ul>
+                      );
+                    })}
                   </div>
                 );
               })}

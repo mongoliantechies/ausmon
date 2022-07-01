@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from // { useState }
+"react";
 // import { useDispatch } from "react-redux";
 import "../../styles/subscribe.css";
 // import { addUser } from "./subscribesSlice";
@@ -8,9 +9,9 @@ import "../../styles/subscribe.css";
 // const listID = "207e1c0c90";
 
 export const Subscribe = () => {
-  const [email, setEmail] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [firstName, setFirstName] = useState("");
+  // const [lastName, setLastName] = useState("");
   // const dispatch = useDispatch();
   // const handleSubscribe = async () => {
   //   const userDetail = await mailchimp.lists.addListMember(listID, {
@@ -41,19 +42,19 @@ export const Subscribe = () => {
         </p>
         <form>
           <input
-            onChange={(e) => setEmail(e.target.value)}
+            // onChange={(e) => setEmail(e.target.value)}
             type="email"
             placeholder="Email address"
             required
           />
           <input
-            onChange={(e) => setFirstName(e.target.value)}
+            // onChange={(e) => setFirstName(e.target.value)}
             type="text"
             placeholder="First name"
             required
           />
           <input
-            onChange={(e) => setLastName(e.target.value)}
+            // onChange={(e) => setLastName(e.target.value)}
             type="text"
             placeholder="Last name"
             required

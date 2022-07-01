@@ -16,12 +16,13 @@ export const ContactUs = ({ language }) => {
   }, [dataSource]);
 
   return (
-    <div className="contactUs row my-5">
+    <div className="contactUs row py-5">
       <h1 className="col-lg-12 col-md-8 mx-auto">
         {dataSource === navMon
           ? `Бидэнтэй ${contactData[0].name}`
           : contactData[0].name}
       </h1>
+      <SendEmail language={language} emailTo={contactData[0].content.email} />
       <div className="contactUs-content col-lg-12 col-md-8 mx-auto">
         <span>
           <img
@@ -49,7 +50,6 @@ export const ContactUs = ({ language }) => {
           </Link>
         </span>
       </div>
-      <SendEmail language={language} emailTo={contactData[0].content.email} />
     </div>
   );
 };
