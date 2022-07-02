@@ -14,13 +14,17 @@ export const Events = ({ language }) => {
   return (
     <div className="row" style={{ backgroundColor: "white" }}>
       <div className="events-title">
-        <h1>{language === "mon" ? "Үйл ажиллагаа" : "Events"}</h1>
+        <h1>{language === "mon" ? "Өдөрлөгүүд" : "Events"}</h1>
         <hr></hr>
       </div>
       <div className="events-container">
         {(events || []).map((event) => {
           return (
-            <Link to={`/events/${event.id}`} style={{ textDecoration: "none" }}>
+            <Link
+              to={`/events/${event.id}`}
+              style={{ textDecoration: "none" }}
+              key={event.id}
+            >
               <div
                 onClick={(e) => {
                   return dispatch(
@@ -28,7 +32,6 @@ export const Events = ({ language }) => {
                   );
                 }}
                 className="events col"
-                key={event.id}
               >
                 <div className="date">
                   <h3>{event.date.day}</h3>

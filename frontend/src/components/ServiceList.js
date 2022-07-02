@@ -11,15 +11,15 @@ export const ServiceList = ({ language }) => {
     <div className="row" style={{ backgroundColor: "white" }}>
       <div className="service-title">
         <h1>
-          {language === "mon" ? "Бид таньд яаж туслах вэ?" : "How can we help?"}
+          {language === "mon" ? "Үйл ажиллагааны үндсэн чиглэлүүд" : "Services"}
         </h1>
         <hr></hr>
       </div>
       <div className="service-container">
         {(services || []).map((service) => {
-          return (
-            <Link to={`/service/${service.id}`}>
-              <div className="services col" key={service.id}>
+          return service.id ? (
+            <Link to={`/services/${service.id}`} key={service.id}>
+              <div className="services col">
                 <img
                   src={
                     process.env.PUBLIC_URL + `/service-images/${service.image}`
@@ -30,6 +30,19 @@ export const ServiceList = ({ language }) => {
                 <hr></hr>
               </div>
             </Link>
+          ) : (
+            <a href={service.link} key={service.id}>
+              <div className="services col" key={service.id}>
+                <img
+                  src={
+                    process.env.PUBLIC_URL + `/service-images/${service.image}`
+                  }
+                  alt={service.name}
+                />
+                {service.name.toUpperCase()}
+                <hr></hr>
+              </div>
+            </a>
           );
         })}
       </div>

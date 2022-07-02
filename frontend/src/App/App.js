@@ -1,8 +1,8 @@
-import "../styles/App.css";
+// import "../styles/App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Nav } from "../components/navComponents/Nav.js";
 import { ServiceList } from "../components/ServiceList.js";
-import { Footer } from "../components/Footer.js";
+import { Footer } from "../components/footer/Footer.js";
 import { Events } from "../features/events/Events";
 import { Subscribe } from "../features/subscribe/Subscribe";
 import { NewsList } from "../features/news/NewsList";
@@ -14,6 +14,7 @@ import { Swipe } from "../components/slider/Swipe";
 import { useState } from "react";
 // import { Language } from "../components/Language";
 import { Service } from "../components/Service";
+import { Newsletters } from "../components/footer/Newsletters";
 // import { Fetch } from "../components/Fetch";
 
 function App() {
@@ -61,7 +62,7 @@ function App() {
             path={"/events/:id"}
             render={(prop) => <Event language={language} />}
           ></Route>
-          {/* <Route path="/resources" component={Resources}>
+          {/* <Route path="/album" component={Resources}>
               
             </Route> */}
           {/* <Route path="/donate" component={Donate}>
@@ -75,8 +76,18 @@ function App() {
             render={(prop) => <ContactUs language={language} />}
           ></Route>
           <Route
-            path={"/service/:id"}
+            path={"/services"}
+            exact
+            render={(prop) => <ServiceList language={language} />}
+          ></Route>
+          <Route
+            path={"/services/:id"}
             render={(prop) => <Service language={language} />}
+          ></Route>
+          <Route
+            path={"/newsletters"}
+            exact
+            render={(prop) => <Newsletters language={language} />}
           ></Route>
         </div>
       </Switch>

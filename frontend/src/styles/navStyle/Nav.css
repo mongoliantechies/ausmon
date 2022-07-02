@@ -18,6 +18,7 @@
     grid-template-columns: 3fr 9fr; */
     justify-items: center;
     align-items: center;
+    text-align: justify;
     border: none;
     border-radius: 70%;
 }
@@ -25,6 +26,7 @@
 .nav-hidden-links {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
+    border-bottom: chartreuse;
 }
 
 .nav-menu {
@@ -39,8 +41,9 @@
     font-weight: bold;
     transition: color 0.2s;
     transition: font-weight 0.5s;
-    padding: 8px 0;
+    padding: 8px 5px;
     text-align: center;
+    align-self: center;
 }
 
 .nav-link:active {
@@ -51,6 +54,7 @@
 .nav-link:hover {
     color: rgba(38, 94, 158, 1);
     font-weight: 900;
+    border-bottom: 2px solid rgba(38, 94, 158, 1);
 }
 
 .nav img {

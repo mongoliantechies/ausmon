@@ -1,8 +1,8 @@
 import React from "react";
-import "../styles/footer.css";
+import "../../styles/footer.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { selectFooterLinks } from "../features/footer/footerSlice";
+import { selectFooterLinks } from "../../features/footer/footerSlice";
 import { SocialMedia } from "./SocialMedia";
 
 export const Footer = () => {

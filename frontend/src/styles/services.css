@@ -86,6 +86,18 @@ hr {
     text-align: center;
 }
 
+table, tr, td, th {
+    border: 1px solid black;
+    text-align: left;
+    margin-top: 20px;
+}
+
+th {
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: lightblue;
+}
 @media (max-width: 992px) {
     .services, .events, .articles {
         height: 220px;
