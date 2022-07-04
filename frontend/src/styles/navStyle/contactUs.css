@@ -1,10 +1,16 @@
-.contactUs h1{
-    text-align: center;
+.contactUs {
+    background-image: url('../../../public/contact-icons/hand_phone.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    row-gap: 0;
 }
 
-/* .contactUs {
-    display: gr;
-} */
+.contactUs h1{
+    text-align: center;
+    height: fit-content;
+}
 
 .contactUs-content {
     display: flex;
@@ -20,7 +26,7 @@
 }
 
 .contactUs-content img {
-    width: 25px;
+    width: 30px;
     margin-right: 10px;
     align-self: center;
 }
@@ -30,6 +36,11 @@
     margin: 20px auto;
     padding: 15px;
     text-align: center;
+    /* border: 2px gray solid; */
+}
+
+.contactUs input {
+    border: 1px gray solid;
 }
 
 .contactUs form p {
@@ -83,5 +94,12 @@
 
     .contactUs form {
         width: 80%;
+    }
+}
+
+@media (max-width: 880px) {
+    .articles img {
+        border-top-left-radius: 21px;
+        border-top-right-radius: 21px;
     }
 }

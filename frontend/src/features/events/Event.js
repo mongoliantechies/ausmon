@@ -4,7 +4,7 @@ import { selectEventById } from "./eventByIdSlice";
 
 export const Event = () => {
   const eventById = useSelector(selectEventById);
-  // console.log("event", eventById);
+
   return (
     <div className="eventById">
       <img
