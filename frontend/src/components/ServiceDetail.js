@@ -14,6 +14,7 @@ export const ServiceDetail = ({ language, topic }) => {
           />
         );
       })}
+      {""}
 
       <p style={{ fontSize: "1em", fontWeight: "bold" }}>
         {language === "mon" ? "Эх сурвалж сайт: " : "Resource from: "}

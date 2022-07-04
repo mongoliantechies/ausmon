@@ -36,6 +36,11 @@
     margin: 20px auto;
     padding: 15px;
     text-align: center;
+    /* border: 2px gray solid; */
+}
+
+.contactUs input {
+    border: 1px gray solid;
 }
 
 .contactUs form p {

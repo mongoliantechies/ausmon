@@ -13,6 +13,7 @@ const slideDataEng = require("../../DataEng/sliderData.json");
 
 export const Swipe = ({ language }) => {
   const swiperRef = useRef(null);
+
   return (
     <div
       onMouseEnter={() => swiperRef.current.swiper.autoplay.stop()}
@@ -48,7 +49,7 @@ export const Swipe = ({ language }) => {
                 <img
                   // loading="lazy"
                   src={process.env.PUBLIC_URL + `/slider-images/${slide.image}`}
-                  alt={slide}
+                  alt=""
                 />
               </SwiperSlide>
             );

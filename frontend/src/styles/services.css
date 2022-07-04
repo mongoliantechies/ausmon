@@ -40,7 +40,7 @@ a {
     flex-direction: column;
     justify-content: center; 
     align-content: center;
-    padding: 0 10px;
+    padding: 0 5%;
     background-color: white;
     transition: background-color, color 0.2s ease-in-out;
 }

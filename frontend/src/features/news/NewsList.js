@@ -22,14 +22,13 @@ export const NewsList = ({ language }) => {
       <div className="news-container ">
         {(articles || []).map((article) => {
           return (
-            <div className="articles col" key={article.id}>
-              {/* <img src={article.image} alt={article.title} loading="lazy" /> */}
+            <div className="articles" key={article.id}>
               <div className="news-date">
                 <img
                   src={process.env.PUBLIC_URL + "/event-icons/clock-icon.webp"}
                   alt="clock-icon"
                 />
-                {article.date}
+                <p>{article.date}</p>
               </div>
               <div id="article-context">
                 <h3>{article.title}</h3>

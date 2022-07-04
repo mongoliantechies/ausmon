@@ -28,8 +28,14 @@ export const Service = ({ language }) => {
           return (
             <Link to={`/services/${chosenService[0].id}/${list.key}`}>
               <div
-                style={{ height: "110px", borderRadius: "15px" }}
-                className="services"
+                style={{
+                  maxHeight: "180px",
+                  height: "fit-content",
+                  minHeight: "140px",
+                  borderRadius: "15px",
+                  overflow: "hidden",
+                }}
+                className="services justify-content-start"
                 onClick={(e) => {
                   setTopic(list);
                 }}

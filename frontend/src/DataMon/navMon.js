@@ -88,7 +88,7 @@ export const navMon = [
     engName: "Contact Us",
     id: 8,
     content: {
-      phone: "0415 674 556,  0451 441 085",
+      phone: "0415 674 556, 0451 441 085",
       email: "ausmon.csdi@gmail.com",
       socialMedia: "https://www.facebook.com/AMCSDI",
     },
