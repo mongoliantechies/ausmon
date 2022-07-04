@@ -27,6 +27,7 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     border-bottom: chartreuse;
+    min-width: 250px;
 }
 
 .nav-menu {
@@ -44,6 +45,7 @@
     padding: 8px 5px;
     text-align: center;
     align-self: center;
+    height: fit-content;
 }
 
 .nav-link:active {
@@ -54,7 +56,7 @@
 .nav-link:hover {
     color: rgba(38, 94, 158, 1);
     font-weight: 900;
-    border-bottom: 2px solid rgba(38, 94, 158, 1);
+    /* border-bottom: 2px solid rgba(38, 94, 158, 1); */
 }
 
 .nav img {
@@ -107,9 +109,9 @@
         height: min-content;
     }
 
-    .nav-link {
+    /* .nav-link {
         height: 30px;
-    }
+    } */
 
     .nav-menu {
         display: block;

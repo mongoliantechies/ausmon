@@ -19,7 +19,7 @@ export const ServiceList = ({ language }) => {
         {(services || []).map((service) => {
           return service.id ? (
             <Link to={`/services/${service.id}`} key={service.id}>
-              <div className="services col">
+              <div className="services">
                 <img
                   src={
                     process.env.PUBLIC_URL + `/service-images/${service.image}`

@@ -29,17 +29,17 @@ function App() {
           className="App"
           style={{ backgroundColor: "rgba(247, 248, 252, 1)" }}
         >
-          <div className="container-fluid mx-auto h-100">
-            <Nav language={language} setLanguage={setLanguage} />
-            <Route path="/" exact>
-              <Swipe language={language} />
-              <ServiceList language={language} />
-              <NewsList language={language} />
-              <Events language={language} />
-              <Subscribe language={language} />
-              <Footer language={language} />
-            </Route>
-          </div>
+          {/* <div className="container-fluid mx-auto h-100"> */}
+          <Nav language={language} setLanguage={setLanguage} />
+          <Route path="/" exact>
+            <Swipe language={language} />
+            <ServiceList language={language} />
+            <NewsList language={language} />
+            <Events language={language} />
+            <Subscribe language={language} />
+            <Footer language={language} />
+          </Route>
+          {/* </div> */}
           <Route
             path={"/aboutus"}
             render={(prop) => <AboutUs language={language} />}

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import "../../styles/navStyle/Nav.css";
 import { NavLink } from "react-router-dom";
 import { navEng } from "../../DataEng/navEng";
@@ -8,24 +8,7 @@ import { Language } from "../Language";
 import { HomeLogo } from "./HomeLogo";
 
 export const Nav = ({ language, setLanguage }) => {
-  const divRef = useRef(null);
   const [navHidden, setNavHidden] = useState(true);
-
-  const toggleNavLinks = () => {
-    setNavHidden(!navHidden);
-  };
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (divRef.current && !divRef.current.contains(event.target)) {
-        setNavHidden(true);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [divRef]);
 
   return (
     <div
@@ -37,9 +20,8 @@ export const Nav = ({ language, setLanguage }) => {
       <div className="nav col-lg-11 col-md-3 col-sm-6 mx-sm-2 p-0 m-0 justify-content-around">
         <div className="nav-hidden col-lg-2 mx-auto">
           <div
-            ref={divRef}
             className="nav-menu col-md-2 col-xs-12 mx-auto"
-            onClick={toggleNavLinks}
+            onMouseEnter={(e) => setNavHidden(false)}
           >
             <img
               src={process.env.PUBLIC_URL + `/event-icons/menu_icon.webp`}
@@ -49,11 +31,12 @@ export const Nav = ({ language, setLanguage }) => {
           <HomeLogo />
         </div>
         <div
+          onMouseLeave={(e) => setNavHidden(true)}
           className="nav-hidden-links col-lg-10"
           style={
             navHidden === true
               ? {
-                  top: "-255px",
+                  top: "-380px",
                   transition:
                     "top 0.5s ease-in-out 0.5s, opacity 0.5s ease-in-out 0.5s",
                 }
@@ -61,10 +44,12 @@ export const Nav = ({ language, setLanguage }) => {
           }
         >
           <NavLink to="/" activeClassName="active" className="nav-link">
-            {"Home".toUpperCase()}
+            {language === "mon"
+              ? "Нүүр хуудас".toUpperCase()
+              : "Home".toUpperCase()}
           </NavLink>
 
-          {Object.values(language === "mon" ? navMon : navEng).map((nav) => {
+          {(language === "mon" ? navMon : navEng).map((nav) => {
             return (
               <NavLink
                 to={`/${nav.engName.replace(/ /g, "").toLowerCase()}`}

@@ -27,21 +27,21 @@ export const SendEmail = ({ language, emailTo }) => {
         onChange={(e) => setName(e.target.value)}
         value={name}
         type="text"
-        placeholder={language === "mon" ? "таны нэр" : "name"}
+        placeholder={language === "mon" ? "Таны нэр" : "name"}
         required
       />
       <input
         onChange={(e) => setPhone(e.target.value)}
         value={phone}
         type="tel"
-        placeholder={language === "mon" ? "утасны дугаар" : "phone number"}
+        placeholder={language === "mon" ? "Утасны дугаар" : "phone number"}
         required
       />
       <input
         onChange={(e) => setEmail(e.target.value)}
         value={email}
         type="email"
-        placeholder={language === "mon" ? "имайл хаяг" : "email address"}
+        placeholder={language === "mon" ? "И-майл хаяг" : "email address"}
         required
       />
       <input
@@ -49,7 +49,7 @@ export const SendEmail = ({ language, emailTo }) => {
         value={message}
         id="message"
         type="text"
-        placeholder={language === "mon" ? "захиа" : "message"}
+        placeholder={language === "mon" ? "Захиа" : "message"}
         required
       />
       <button type="submit" onSubmit={(e) => handleSendEmail(e.target)}>
