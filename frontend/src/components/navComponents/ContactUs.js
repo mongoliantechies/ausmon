@@ -45,9 +45,9 @@ export const ContactUs = ({ language }) => {
             src={process.env.PUBLIC_URL + `/contact-icons/facebook_icon.webp`}
             alt="social"
           />
-          <Link to={contactData[0].content.socialMedia}>
+          <a href={contactData[0].content.socialMedia} target="_blank">
             {contactData[0].content.socialMedia}
-          </Link>
+          </a>
         </span>
       </div>
     </div>
