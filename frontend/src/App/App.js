@@ -10,7 +10,6 @@ import { AboutUs } from "../components/navComponents/AboutUs";
 import { FullNews } from "../features/news/FullNews";
 import { Event } from "../features/events/Event";
 import { ContactUs } from "../components/navComponents/ContactUs";
-// import { Swipe } from "../components/slider/Swipe";
 import { useState } from "react";
 // import { Language } from "../components/Language";
 import { Service } from "../components/Service";
@@ -33,7 +32,6 @@ function App() {
           {/* <div className="container-fluid mx-auto h-100"> */}
           <Nav language={language} setLanguage={setLanguage} />
           <Route path="/" exact>
-            {/* <Swipe language={language} /> */}
             <HomeSlider language={language} />
             <ServiceList language={language} />
             <NewsList language={language} />

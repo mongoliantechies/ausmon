@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../../styles/navStyle/Nav.css";
 import { NavLink } from "react-router-dom";
 import { navEng } from "../../DataEng/navEng";
@@ -6,6 +6,7 @@ import { navMon } from "../../DataMon/navMon";
 // import { SearchBar } from "../SearchBar";
 import { Language } from "../Language";
 import { HomeLogo } from "./HomeLogo";
+// import { HiddenNav } from "./HiddenNav";
 
 export const Nav = ({ language, setLanguage }) => {
   const [navHidden, setNavHidden] = useState(true);

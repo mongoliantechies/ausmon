@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 const slideDataMon = require("../../DataMon/sliderData.json");
 const slideDataEng = require("../../DataEng/sliderData.json");
 
@@ -37,7 +37,9 @@ export const HomeSlider = ({ language }) => {
               }
               style={{
                 backgroundImage: `url("./slider-images/${slide.image}")`,
-                backgroundRepeat: "round",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
                 height: "400px",
               }}
             >
