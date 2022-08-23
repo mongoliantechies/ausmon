@@ -15,6 +15,7 @@ import { useState } from "react";
 import { Service } from "../components/Service";
 import { Newsletters } from "../components/footer/Newsletters";
 import { HomeSlider } from "../components/slider/HomeSlider.js";
+import { PhotoAlbumList } from "../components/PhotoAlbumList.js";
 // import { Fetch } from "../components/Fetch";
 
 function App() {
@@ -62,9 +63,10 @@ function App() {
             path={"/events/:id"}
             render={(prop) => <Event language={language} />}
           ></Route>
-          {/* <Route path="/album" component={Resources}>
-              
-            </Route> */}
+          <Route
+            path="/album"
+            render={(prop) => <PhotoAlbumList language={language} />}
+          ></Route>
           {/* <Route path="/donate" component={Donate}>
               
             </Route> */}

@@ -22,6 +22,10 @@ export const Nav = ({ language, setLanguage }) => {
             <img
               src={process.env.PUBLIC_URL + `/event-icons/menu_icon.webp`}
               alt="nav-menu"
+              // dataBsToggle="collapse"
+              // dataBsTarget="#collapseWidthExample"
+              // ariaExpanded="false"
+              // ariaControls="collapseWidthExample"
             />
           </div>
           <HomeLogo />
