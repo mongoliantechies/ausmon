@@ -11,10 +11,8 @@
 }
 
 .footer-container {
-    /* display: grid;
-    grid-template-columns: 7fr 1fr; */
     height: 300px;
-    /* padding: 0 70px; */
+    justify-content: center;
     background-color: rgba(38, 94, 158, 1);
     position: relative;
 }

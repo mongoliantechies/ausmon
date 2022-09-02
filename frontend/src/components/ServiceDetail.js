@@ -1,9 +1,10 @@
 import React from "react";
+import { memo } from "react";
 
-export const ServiceDetail = ({ language, topic }) => {
+export const ServiceDetail = memo(({ language, topic }) => {
   return (
     <div className="serviceTitle">
-      <h2>{topic.title}</h2>
+      <h2 className="text-primary mb-2">{topic.title}</h2>
       <div dangerouslySetInnerHTML={{ __html: topic.content.context }} />
       {(topic.content.images || []).map((image) => {
         return (
@@ -28,4 +29,4 @@ export const ServiceDetail = ({ language, topic }) => {
       </ul>
     </div>
   );
-};
+});

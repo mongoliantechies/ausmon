@@ -70,6 +70,12 @@ a {
     margin-top: 20px;
 }
 
+.serviceTitle img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
 hr {
     border-top: 3px rgb(56, 55, 55) solid;
     width: 30%;

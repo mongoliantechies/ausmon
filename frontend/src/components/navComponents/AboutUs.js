@@ -18,7 +18,6 @@ export const AboutUs = ({ language }) => {
             <div className="aboutUs-title col-lg-8 px-4 mx-auto">
               <h1>{section.title.toUpperCase()}</h1>
               {section.context.map((el) => {
-                console.log("", el.image);
                 return (
                   <div className="aboutUs-context" key={el.subName}>
                     <h2>{el.subName}</h2>

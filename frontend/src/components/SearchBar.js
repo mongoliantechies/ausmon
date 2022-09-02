@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const SearchBar = () => {
+export const SearchBar = memo(() => {
   const [search, setSearch] = useState("");
 
   const handleInputChange = ({ target }) => {
@@ -25,4 +25,4 @@ export const SearchBar = () => {
       </div>
     </div>
   );
-};
+});

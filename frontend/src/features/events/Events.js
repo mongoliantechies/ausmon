@@ -42,6 +42,8 @@ export const Events = ({ language }) => {
                 <h4>{event.name}</h4>
                 <div className="event-time">
                   <img
+                    width={15}
+                    height={15}
                     src={
                       process.env.PUBLIC_URL + `/event-icons/clock-icon.webp`
                     }
@@ -51,6 +53,8 @@ export const Events = ({ language }) => {
                 </div>
                 <div className="event-location">
                   <img
+                    width={15}
+                    height={15}
                     src={
                       process.env.PUBLIC_URL + `/event-icons/location-icon.webp`
                     }

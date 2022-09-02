@@ -1,40 +1,33 @@
-import React, { useState } from "react";
+import React, { useCallback } from "react";
 const slideDataMon = require("../../DataMon/sliderData.json");
 const slideDataEng = require("../../DataEng/sliderData.json");
 
 export const HomeSlider = ({ language }) => {
   const data = language === "mon" ? slideDataMon : slideDataEng;
-  const [slideIndex, setSlideIndex] = useState(0);
-  const prevButton = () => {
-    if (slideIndex < 1) {
-      setSlideIndex(3);
-    } else {
-      setSlideIndex(slideIndex - 1);
-    }
-  };
-  const nextButton = () => {
-    if (slideIndex > 2) {
-      setSlideIndex(0);
-    } else {
-      setSlideIndex(slideIndex + 1);
-    }
-  };
+  let slideIndex = 0;
 
+  const load = useCallback(() => {
+    return (
+      <div class="spinner-grow" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    );
+  }, []);
   return (
     <div
       id="carouselExampleControlsNoTouching"
       className="carousel slide w-75 mx-auto"
-      dataBsTouch="false"
-      dataBsInterval="false"
+      onLoad={load}
+      // data-bs-touch="false"
+      // data-bs-interval="false"
     >
-      <div className="carousel-inner position-relative">
+      <div className="w-100 h-auto carousel-inner position-relative">
         {(data || []).map((slide, index) => {
           return (
             <div
-              className={
-                "w-100 carousel-item " +
-                `${slideIndex === index ? "active" : ""}`
-              }
+              className={`carousel-item 
+                ${slideIndex === index ? "active" : ""}`}
+              key={"slide" + index}
               style={{
                 backgroundImage: `url("./slider-images/${slide.image}")`,
                 backgroundRepeat: "no-repeat",
@@ -44,7 +37,7 @@ export const HomeSlider = ({ language }) => {
               }}
             >
               <div className="w-100 d-block text-center text-white top-50 start-50 position-absolute translate-middle">
-                <h1 className="fs-2 text-uppercase">{slide.title}</h1>
+                <h1 className="fs-2">{slide.title.toUpperCase()}</h1>
                 <p>{slide.context}</p>
               </div>
             </div>
@@ -54,22 +47,28 @@ export const HomeSlider = ({ language }) => {
       <button
         className="carousel-control-prev my-auto"
         type="button"
-        dataBsTarget="#carouselExampleControlsNoTouching"
-        dataBsSlide="prev"
-        onClick={prevButton}
+        data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="prev"
+        // onClick={prevButton}
       >
-        <span className="carousel-control-prev-icon" ariaHidden="true"></span>
-        <span className="visually-hidden">Previous</span>
+        <strong
+          className="carousel-control-prev-icon"
+          aria-hidden="true"
+        ></strong>
+        {/* <strong className="visually-hidden">Previous</strong> */}
       </button>
       <button
         className="carousel-control-next my-auto"
         type="button"
-        dataBsTarget="#carouselExampleControlsNoTouching"
-        dataBsSlide="next"
-        onClick={nextButton}
+        data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="next"
+        // onClick={nextButton}
       >
-        <span className="carousel-control-next-icon" ariaHidden="true"></span>
-        <span className="visually-hidden">Next</span>
+        <strong
+          className="carousel-control-next-icon"
+          aria-hidden="true"
+        ></strong>
+        {/* <strong className="visually-hidden">Next</strong> */}
       </button>
     </div>
   );

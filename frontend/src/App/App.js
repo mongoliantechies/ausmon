@@ -1,4 +1,4 @@
-// import "../styles/App.css";
+import React, { useCallback } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Nav } from "../components/navComponents/Nav.js";
 import { ServiceList } from "../components/ServiceList.js";
@@ -20,18 +20,30 @@ import { PhotoAlbumList } from "../components/PhotoAlbumList.js";
 
 function App() {
   const [language, setLanguage] = useState("mon");
+  const load = useCallback(() => {
+    return (
+      <div class="spinner-grow" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    );
+  }, []);
   // const MonLang = createContext();
-
   return (
     // <MonLang.Provider value={language}>
     <Router>
-      <Switch>
-        <div
-          className="App"
-          style={{ backgroundColor: "rgba(247, 248, 252, 1)" }}
-        >
+      <div
+        onLoad={load}
+        className="App"
+        style={{ backgroundColor: "rgba(247, 248, 252, 1)" }}
+      >
+        {/* <Switch>
+          <Route path={"/"}> */}
+        <Nav language={language} setLanguage={setLanguage} />
+        {/* </Route>
+        </Switch> */}
+
+        <Switch>
           {/* <div className="container-fluid mx-auto h-100"> */}
-          <Nav language={language} setLanguage={setLanguage} />
           <Route path="/" exact>
             <HomeSlider language={language} />
             <ServiceList language={language} />
@@ -42,6 +54,7 @@ function App() {
           </Route>
           {/* </div> */}
           <Route
+            exact
             path={"/aboutus"}
             render={(prop) => <AboutUs language={language} />}
           ></Route>
@@ -64,7 +77,8 @@ function App() {
             render={(prop) => <Event language={language} />}
           ></Route>
           <Route
-            path="/album"
+            exact
+            path={"/album"}
             render={(prop) => <PhotoAlbumList language={language} />}
           ></Route>
           {/* <Route path="/donate" component={Donate}>
@@ -75,6 +89,7 @@ function App() {
             </Route> */}
           <Route
             path={"/contactus"}
+            exact
             render={(prop) => <ContactUs language={language} />}
           ></Route>
           <Route
@@ -91,8 +106,8 @@ function App() {
             exact
             render={(prop) => <Newsletters language={language} />}
           ></Route>
-        </div>
-      </Switch>
+        </Switch>
+      </div>
     </Router>
     // </MonLang.Provider>
   );
