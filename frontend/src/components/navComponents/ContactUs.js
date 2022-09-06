@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import "../../styles/navStyle/contactUs.css";
 import { navMon } from "../../DataMon/navMon";
 import { navEng } from "../../DataEng/navEng";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { SendEmail } from "./SendEmail";
 
 export const ContactUs = ({ language }) => {
@@ -45,9 +45,13 @@ export const ContactUs = ({ language }) => {
             src={process.env.PUBLIC_URL + `/contact-icons/facebook_icon.webp`}
             alt="social"
           />
-          <Link to={contactData[0].content.socialMedia}>
+          <a
+            href={contactData[0].content.socialMedia}
+            target="_blank"
+            rel="noreferrer"
+          >
             {contactData[0].content.socialMedia}
-          </Link>
+          </a>
         </span>
       </div>
     </div>
