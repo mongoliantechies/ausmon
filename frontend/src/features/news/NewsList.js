@@ -25,6 +25,8 @@ export const NewsList = ({ language }) => {
             <div className="articles" key={article.id}>
               <div className="news-date">
                 <img
+                  width={12}
+                  height={12}
                   src={process.env.PUBLIC_URL + "/event-icons/clock-icon.webp"}
                   alt="clock-icon"
                 />

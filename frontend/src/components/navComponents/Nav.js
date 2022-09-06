@@ -1,31 +1,18 @@
-import React, { useState } from "react";
+import React, { memo, useState } from "react";
 import "../../styles/navStyle/Nav.css";
 import { NavLink } from "react-router-dom";
 import { navEng } from "../../DataEng/navEng";
 import { navMon } from "../../DataMon/navMon";
 // import { SearchBar } from "../SearchBar";
 import { Language } from "../Language";
-import { HomeLogo } from "./HomeLogo";
-// import { HiddenNav } from "./HiddenNav";
+import { NavHidden } from "./NavHidden";
 
-export const Nav = ({ language, setLanguage }) => {
+export const Nav = memo(({ language, setLanguage }) => {
   const [navHidden, setNavHidden] = useState(true);
-
   return (
     <div className="row top mx-4 mx-lg-1 mb-lg-0 mx-sm-0 mb-xs-3 mx-lg-auto justify-content-between mb-sm-4 bg-white">
       <div className="nav col-lg-11 col-md-3 col-sm-6 mx-sm-2 p-0 m-0 justify-content-around">
-        <div className="nav-hidden col-lg-2 mx-auto">
-          <div
-            className="nav-menu col-md-2 col-xs-12 mx-auto"
-            onClick={(e) => setNavHidden(false)}
-          >
-            <img
-              src={process.env.PUBLIC_URL + `/event-icons/menu_icon.webp`}
-              alt="nav-menu"
-            />
-          </div>
-          <HomeLogo />
-        </div>
+        <NavHidden setNavHidden={setNavHidden} />
         <div
           onMouseLeave={(e) => setNavHidden(true)}
           className="nav-hidden-links col-lg-10"
@@ -63,4 +50,4 @@ export const Nav = ({ language, setLanguage }) => {
       <Language language={language} setLanguage={setLanguage} />
     </div>
   );
-};
+});

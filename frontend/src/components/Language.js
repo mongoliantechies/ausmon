@@ -23,7 +23,7 @@ export const Language = memo(({ language, setLanguage }) => {
 
   return (
     <div
-      className="language col-lg-1 mx-lg-3 mx-md-5 mx-lg-1 px-0 mx-1"
+      className="language col-lg-1 mx-md-5 mx-lg-1 px-0 mx-1"
       style={{ width: "auto", alignSelf: "center" }}
     >
       <Redirect to="/">

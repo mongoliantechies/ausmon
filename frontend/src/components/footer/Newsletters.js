@@ -11,7 +11,7 @@ export const Newsletters = ({ language }) => {
       <ul>
         {(chosenNews[0].list || []).map((news) => {
           return (
-            <li>
+            <li key={news.id}>
               <a href={process.env.PUBLIC_URL + `/newsletters/${news}`}>
                 {news}
               </a>

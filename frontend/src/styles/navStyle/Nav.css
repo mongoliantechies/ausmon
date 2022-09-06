@@ -13,14 +13,22 @@
     }
 }
 
+.top {
+    justify-content: space-between;
+    background-color: white;
+}
+
 .nav {
     /* display: grid;
     grid-template-columns: 3fr 9fr; */
     justify-items: center;
+    justify-content: space-around;
     align-items: center;
     text-align: justify;
     border: none;
     border-radius: 70%;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-hidden-links {

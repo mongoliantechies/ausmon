@@ -3,10 +3,12 @@ import React from "react";
 
 export const SocialMedia = () => {
   return (
-    <div className="footer-social-links col-2 col-xxl-2 col-sm-6 col-md-6 col-lg-2">
+    <div className="footer-social-links col-2 col-sm-6 col-md-6 col-lg-2">
       <a href="https://www.facebook.com/AMCSDI/">
-        <button id="facebook">
+        <button type="button" id="facebook">
           <img
+            width={28}
+            height={38}
             src={
               process.env.PUBLIC_URL + "/social-media-icons/facebook-icon.webp"
             }
@@ -15,7 +17,7 @@ export const SocialMedia = () => {
         </button>
       </a>
 
-      {/* <button id="instagram">
+      {/* <button type="button" id="instagram">
         <img
           src={
             process.env.PUBLIC_URL + "/social-media-icons/instagram-icon.webp"
@@ -25,16 +27,20 @@ export const SocialMedia = () => {
         
       </button> */}
       <div>
-        <button className="tel">
+        <button type="button" className="tel">
           <img
+            width={15}
+            height={15}
             src={process.env.PUBLIC_URL + "/social-media-icons/phone-icon.webp"}
             alt="telephone"
           />
           0415 674 556
         </button>
 
-        <button className="tel">
+        <button type="button" className="tel">
           <img
+            width={15}
+            height={15}
             src={process.env.PUBLIC_URL + "/social-media-icons/phone-icon.webp"}
             alt="telephone"
           />

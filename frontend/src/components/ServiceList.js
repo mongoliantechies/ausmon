@@ -34,6 +34,8 @@ export const ServiceList = ({ language }) => {
             <a href={service.link} key={service.id}>
               <div className="services col" key={service.id}>
                 <img
+                  width={60}
+                  height={60}
                   src={
                     process.env.PUBLIC_URL + `/service-images/${service.image}`
                   }
