@@ -40,7 +40,7 @@ a {
     flex-direction: column;
     justify-content: center; 
     align-content: center;
-    padding: 0 10px;
+    padding: 0 5%;
     background-color: white;
     transition: background-color, color 0.2s ease-in-out;
 }
@@ -70,6 +70,12 @@ a {
     margin-top: 20px;
 }
 
+.serviceTitle img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
 hr {
     border-top: 3px rgb(56, 55, 55) solid;
     width: 30%;
@@ -86,6 +92,18 @@ hr {
     text-align: center;
 }
 
+table, tr, td, th {
+    border: 1px solid black;
+    text-align: left;
+    margin-top: 20px;
+}
+
+th {
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: lightblue;
+}
 @media (max-width: 992px) {
     .services, .events, .articles {
         height: 220px;

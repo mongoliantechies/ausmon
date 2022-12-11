@@ -5,7 +5,7 @@ import { selectEvents } from "./eventsSlice";
 import "../../styles/events.css";
 import { loadEventById } from "./eventByIdSlice";
 import { Link } from "react-router-dom";
-import { Language } from "../../componentsEng/Language";
+// import { Language } from "../../components/Language";
 
 export const Events = ({ language }) => {
   const events = useSelector(selectEvents);
@@ -14,26 +14,24 @@ export const Events = ({ language }) => {
   return (
     <div className="row" style={{ backgroundColor: "white" }}>
       <div className="events-title">
-        <h1>{language == "mon" ? "Үйл ажиллагаа" : "Events"}</h1>
+        <h1>{language === "mon" ? "Өдөрлөгүүд" : "Events"}</h1>
         <hr></hr>
       </div>
       <div className="events-container">
         {(events || []).map((event) => {
           return (
             <Link
-              to={
-                language == "mon"
-                  ? `/үйлажиллагаа/${event.id}`
-                  : `/events/${event.id}`
-              }
+              to={`/events/${event.id}`}
               style={{ textDecoration: "none" }}
+              key={event.id}
             >
               <div
                 onClick={(e) => {
-                  return dispatch(loadEventById({id: event.id, language: language}));
+                  return dispatch(
+                    loadEventById({ id: event.id, language: language })
+                  );
                 }}
                 className="events col"
-                key={event.id}
               >
                 <div className="date">
                   <h3>{event.date.day}</h3>
@@ -44,15 +42,21 @@ export const Events = ({ language }) => {
                 <h4>{event.name}</h4>
                 <div className="event-time">
                   <img
-                    src={process.env.PUBLIC_URL + `/event-icons/clock-icon.png`}
+                    width={15}
+                    height={15}
+                    src={
+                      process.env.PUBLIC_URL + `/event-icons/clock-icon.webp`
+                    }
                     alt="clock-icon"
                   />
                   <p>{event.time}</p>
                 </div>
                 <div className="event-location">
                   <img
+                    width={15}
+                    height={15}
                     src={
-                      process.env.PUBLIC_URL + `/event-icons/location-icon.png`
+                      process.env.PUBLIC_URL + `/event-icons/location-icon.webp`
                     }
                     alt="location-icon"
                   />

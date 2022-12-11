@@ -11,10 +11,8 @@
 }
 
 .footer-container {
-    /* display: grid;
-    grid-template-columns: 7fr 1fr; */
     height: 300px;
-    /* padding: 0 70px; */
+    justify-content: center;
     background-color: rgba(38, 94, 158, 1);
     position: relative;
 }
@@ -41,7 +39,7 @@
     color: white;
     text-decoration: none;
     transition: font-weight 0.5s;
-    /* padding-left: 20px; */
+    padding-left: 5%;
 
 }
 
@@ -54,8 +52,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     justify-content: space-evenly;
-    height: 40px;
+    /* height: 40px; */
     width: min-content;
+    margin-bottom: 20px;
 }
 
 #facebook:hover, #instagram:hover, #tel:hover {
@@ -66,7 +65,7 @@ button {
     font-size: 9px;
     height: 40px;
     border: none;
-    color: white;
+    color: #fff;
     background-color: initial;
 }
 
@@ -75,7 +74,7 @@ button img {
     height: 30px;
 }
 
-#tel {
+.tel {
     border: 1px white solid;
     border-radius: 10px;
     height: min-content;
@@ -83,8 +82,7 @@ button img {
     font-size: 12px;
     width: max-content;
     padding: 0 15px;
-    /* background-image: url('/public/social-media-icons/phone-icon.png');
-    background-repeat: no-repeat; */
+    height: 20px;
 }
 
 #tel img {
@@ -160,6 +158,7 @@ button img {
 
     .footer-link {
         margin: 30px auto;
+        margin-bottom: 5px;
         width: 90%;
         font-size: 12px;
     }

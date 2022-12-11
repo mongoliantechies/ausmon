@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React from "react";
+import { useSelector } from "react-redux";
 import {
   isLoadingFullNews,
-  loadNewsById,
+  // loadNewsById,
   selectFullNews,
 } from "./newsByIdSlice";
 
@@ -23,7 +23,11 @@ export const FullNews = () => {
 
   return (
     <section className="fullNews">
-      <img src={process.env.PUBLIC_URL + article.image} alt={article.title} />
+      <img
+        src={process.env.PUBLIC_URL + article.image}
+        alt={article.title}
+        loading="lazy"
+      />
       <span>{article.date}</span>
       <h2>{article.title}</h2>
       <p>{article.fullNews}</p>
